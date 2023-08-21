@@ -37,7 +37,7 @@
     backdrop-filter: blur(10px);
     top: 0;
     left: 0;
-    width: 60%;
+    width: 50%;
     height: 100vh;
     transform: translateX(100%);
   }
@@ -241,9 +241,14 @@
 }
 
 @media (max-width: 540px) {
+
+  .mainNav {
+    width: 100%;
+  }
+  
   .mainNav .navBtn {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .navBtn {
     display: none;
@@ -255,5 +260,9 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+  }
+
+  .footerSection {
+
   }
 }
