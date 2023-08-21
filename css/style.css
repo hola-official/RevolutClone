@@ -167,7 +167,7 @@
 .heroSection {
   display: flex;
   justify-content: center;
-  background-image: url(img/hero.png);
+  background-image: url(/img/hero.png);
   height: 100vh;
   width: 100vw;
   margin-top: 15rem;
