@@ -81,7 +81,8 @@
     font-weight: 600;
     margin-bottom: 15px;
   }
-  .herobtn .btn {
+
+  .heroBtn .btn {
     width: 237px;
     height: 47px;
     font-size: 20px;
@@ -213,10 +214,8 @@
     margin-top: 42px;
   }
 
-  .aboutSection .addWallet .gridItemText p,
-  .aboutSection .addWallet .gridItemText h3,
-  .aboutSection .learnMore .gridItemText p,
-  .aboutSection .learnMore .gridItemText h3 {
+  .aboutSection .gridCard p,
+  .aboutSection .gridCard h3 {
     width: 100%;
   }
 
@@ -267,8 +266,18 @@
 }
 
 @media (max-width: 480px) {
+  .header {
+    height: 81px;
+  }
+
   .heroSection {
     background-image: url(/img/phoneBg.svg);
+  }
+
+  .aboutSection {
+    margin: 0;
+    padding: 0;
+    border-radius: 1;
   }
 
   .aboutSection .gridCard {
@@ -294,12 +303,24 @@
   }
 
   .aboutSection .learnMore {
-    margin-top: 15px;
+    height: 598px;
+    gap: 0;
+    padding-bottom: 0;
+  }
+
+  .aboutSection .learnMore .atmTablet {
+    position: relative;
+    top: -60px;
   }
 
   .aboutSection .learnMoreCard .gridItem {
     flex-direction: column-reverse;
     order: 2;
+  }
+
+
+  .aboutSection .gridItemText .learnMoreBtn {
+    margin-top: 0;
   }
 
   button :nth-child(2) {
@@ -310,3 +331,37 @@
     display: none;
   }
 }
+ @media (max-width: 375px) {
+
+  .header {
+    padding: 14px 12px;
+  }
+
+  .aboutSection .gridCard {
+    margin-top: 14px;
+    padding: 0 22px 33px;
+  }
+  .heroBtn .btn {
+    width: 207px;
+    height: 37px;
+    font-size: 16px;
+  }
+
+  .aboutSection .gridItem button {
+    width: 217px;
+    height: 47px;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+ }
+
+ @media (max-width: 280px) {
+  .aboutSection .gridItem .aboutImg {
+    width: 247px;
+    height: 169px;
+  }
+
+  .aboutSection .gridItem .atmTablet {
+
+  }
+ }
