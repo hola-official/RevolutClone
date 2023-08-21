@@ -26,6 +26,10 @@
   gap: 5px;
 }
 
+.mainNav .navBtn {
+  display: none;
+}
+
 .mainNavList {
   display: flex;
   justify-content: center;
@@ -211,7 +215,8 @@
   font-size: 24px;
 }
 
-.heroBtn .btn:hover, .heroBtn .btn:active {
+.heroBtn .btn:hover,
+.heroBtn .btn:active {
   color: #1c1c1c;
   background: #b7ced1;
 }
@@ -410,6 +415,11 @@ button {
   margin-top: 5rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+button :nth-child(2) 
+{
+  display: none;
 }
 
 button p {
