@@ -140,25 +140,27 @@
     grid-column-gap: 78px;
   }
 
-  /* .learnMore .gridItem img {
-    width: 100%;
-    height: 100%;
-    margin-top: 70px;
-  } */
-
   .aboutSection .gridItemText .learnMoreBtn {
     width: 147px;
     height: 47px;
+  }
+  /* FOOTER SECTION */
+
+  .footerSection {
+    height: 80vh;
   }
 }
 
 /* LARGE TABLETS/LAPTOP */
 
 @media (max-width: 991px) {
+  /* HERO SECTION */
   .heroSection {
     height: auto;
     padding-bottom: 194px;
   }
+
+  /* ABOUT SECTION */
 
   .aboutSection {
     padding: 0 34px;
@@ -178,9 +180,11 @@
     margin-bottom: 45px;
   }
 
+  /* FOOTER SECTION */
   .footerSection {
     font-size: 26px;
     padding: 80px 228px 57px 41px;
+    height: auto;
   }
 
   .footerSection .footerLink {
@@ -192,9 +196,12 @@
 /* SMALL TABLETS */
 
 @media (max-width: 768px) {
+  /* LOGO SECTION */
   .logo {
     font-size: 16px;
   }
+
+  /* NAV BAR */
 
   .navBtn {
     font-size: 16px;
@@ -205,6 +212,8 @@
     width: 100px;
     height: 47px;
   }
+
+  /* ABOUT SECTION */
 
   .aboutSection {
     margin: 54px 0;
@@ -229,9 +238,12 @@
     width: auto;
   }
 
+  /* HERO SECTION */
   .heroSection {
     padding-bottom: 44px;
   }
+
+  /* FOOTER SECTION */
   .footerSection {
     width: 100%;
     place-items: center;
@@ -241,6 +253,7 @@
 }
 
 @media (max-width: 540px) {
+  /* NAV BAR */
   .mainNav {
     width: 100%;
   }
@@ -260,20 +273,24 @@
     visibility: visible;
     transform: translateX(0);
   }
+  /* FOOTER SECTION */
   .footerSection {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
+  /* HEADER SECTION */
   .header {
     height: 81px;
   }
 
+  /* HERO SECTION */
   .heroSection {
     background-image: url(/img/phoneBg.svg);
   }
 
+  /* ABOUT SECTION */
   .aboutSection {
     margin: 0;
     padding: 0;
@@ -318,11 +335,11 @@
     order: 2;
   }
 
-
   .aboutSection .gridItemText .learnMoreBtn {
     margin-top: 0;
   }
 
+  /*  */
   button :nth-child(2) {
     display: inline-block;
   }
@@ -331,12 +348,16 @@
     display: none;
   }
 }
- @media (max-width: 375px) {
+
+/* Galaxy Fold and  other smallest phone */
+@media (max-width: 375px) {
+  /* HEADER  SECTION */
 
   .header {
     padding: 14px 12px;
   }
 
+  /* ABOUT SECTION */
   .aboutSection .gridCard {
     margin-top: 14px;
     padding: 0 22px 33px;
@@ -353,16 +374,33 @@
     padding: 12px 10px;
     font-size: 12px;
   }
- }
+}
 
- @media (max-width: 280px) {
+@media (max-width: 280px) {
+  /* ABOUT SECTION */
   .aboutSection .gridItem .aboutImg {
     width: 247px;
     height: 169px;
   }
 
   .aboutSection .gridItem .atmTablet {
-    width: 271px;
-    height: 384px;
+    width: 267px;
+    height: 370px;
   }
- }
+
+  /* FOOTER SECTION */
+  .footerSection {
+    padding: 14px 12px;
+    font-size: 16px;
+    grid-column-gap: 52px;
+  }
+
+  .footerSection h4 {
+    margin-bottom: 25px;
+  }
+
+  .footerSection .footerLink {
+    font-size: 16px;
+    width: auto;
+  }
+}
