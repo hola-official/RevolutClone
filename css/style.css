@@ -275,6 +275,10 @@
   font-weight: 600;
 }
 
+button :nth-child(2) {
+  display: none;
+}
+
 .aboutSection .gridItemText h3 {
   font-family: "Syne", sans-serif;
   font-size: 32px;

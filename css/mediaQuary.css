@@ -228,6 +228,10 @@
     width: 100%;
   }
 
+  .aboutSection .learnMore .gridItemText {
+    place-items: center;
+  }
+
   .aboutSection .gridCard {
     grid-template-columns: 1fr;
     text-align: center;
@@ -323,6 +327,10 @@
     height: 598px;
     gap: 0;
     padding-bottom: 0;
+  }
+
+  .aboutSection .learnMore .gridItemText {
+    place-items: start;
   }
 
   .aboutSection .learnMore .atmTablet {
