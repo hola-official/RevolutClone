@@ -103,3 +103,52 @@ header {
       width: 254px;
     }
   }
+
+  /************ SMALL SCREEN FOR TABLET********/
+
+  @media (max-width: 374px) {
+
+    header {
+      margin: 0 auto;
+      padding: 0;
+  }
+
+  .formLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+    .signForm .headerTag {
+      font-size: 30px;
+    }
+
+    form label {
+      font-size: 15px;
+    }
+    
+    input {
+      border-radius: 3px;
+      border: 1px solid #1c1c1cb3;
+      opacity: 0.6;
+      width: 230px;
+      height: 40px;
+      background: #fff;
+      padding: 5px;
+      font-size: 15px;
+    }
+
+    button {
+      height: 40px;
+      width: 160px;
+  }
+
+    button p {
+      font-size: 20px;
+    }
+
+  }
